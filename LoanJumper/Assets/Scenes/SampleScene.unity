@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 152716247}
   - component: {fileID: 152716248}
   - component: {fileID: 152716249}
+  - component: {fileID: 152716250}
   m_Layer: 0
   m_Name: LitenPlatform_Gress
   m_TagString: Untagged
@@ -214,6 +215,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &152716250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152716246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194610304
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +236,7 @@ GameObject:
   - component: {fileID: 194610305}
   - component: {fileID: 194610306}
   - component: {fileID: 194610307}
+  - component: {fileID: 194610308}
   m_Layer: 0
   m_Name: LitenPlatform_Gress (1)
   m_TagString: Untagged
@@ -315,6 +328,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &194610308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194610304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &251657585
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,13 +487,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342243530}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.988, y: 0.434, z: 0.0016180985}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.87000006, y: 0.22699998, z: -0.031676307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 486533586}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &348397955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348397956}
+  m_Layer: 0
+  m_Name: ThirdGrassFloors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &348397956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348397955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 486533586}
+  m_Father: {fileID: 900337251}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372734273
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +531,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 372734274}
+  - component: {fileID: 372734276}
+  - component: {fileID: 372734275}
   m_Layer: 0
   m_Name: GrassFloor (5)
   m_TagString: Untagged
@@ -501,6 +556,37 @@ Transform:
   m_Father: {fileID: 1115024027}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &372734275
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372734273}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &372734276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372734273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &401406540
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +597,7 @@ GameObject:
   - component: {fileID: 401406541}
   - component: {fileID: 401406542}
   - component: {fileID: 401406543}
+  - component: {fileID: 401406544}
   m_Layer: 0
   m_Name: StorPlatform_Gress
   m_TagString: Untagged
@@ -602,6 +689,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &401406544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401406540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &415634393
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +710,7 @@ GameObject:
   - component: {fileID: 415634394}
   - component: {fileID: 415634395}
   - component: {fileID: 415634396}
+  - component: {fileID: 415634397}
   m_Layer: 0
   m_Name: LitenPlatform_Gress
   m_TagString: Untagged
@@ -703,6 +802,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &415634397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415634393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &416813541
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +823,7 @@ GameObject:
   - component: {fileID: 416813542}
   - component: {fileID: 416813543}
   - component: {fileID: 416813544}
+  - component: {fileID: 416813545}
   m_Layer: 0
   m_Name: LitenPlatform_Gress
   m_TagString: Untagged
@@ -804,6 +915,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &416813545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 416813541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &486005793
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +936,7 @@ GameObject:
   - component: {fileID: 486005794}
   - component: {fileID: 486005795}
   - component: {fileID: 486005796}
+  - component: {fileID: 486005797}
   m_Layer: 0
   m_Name: StorPlatform_Gress
   m_TagString: Untagged
@@ -905,6 +1028,80 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &486005797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486005793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &486533585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486533586}
+  - component: {fileID: 486533588}
+  - component: {fileID: 486533587}
+  m_Layer: 0
+  m_Name: ThirdGrassFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486533586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486533585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1981928993}
+  - {fileID: 342243533}
+  m_Father: {fileID: 348397956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486533587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486533585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &486533588
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486533585}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1187,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 546672117}
+  - component: {fileID: 546672119}
+  - component: {fileID: 546672118}
   m_Layer: 0
   m_Name: GrassFloor (3)
   m_TagString: Untagged
@@ -1013,6 +1212,65 @@ Transform:
   m_Father: {fileID: 1115024027}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &546672118
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546672116}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &546672119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546672116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &647842264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647842265}
+  m_Layer: 0
+  m_Name: RotateFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &647842265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 647842264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900337251}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &775826099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1281,7 @@ GameObject:
   - component: {fileID: 775826100}
   - component: {fileID: 775826101}
   - component: {fileID: 775826102}
+  - component: {fileID: 775826103}
   m_Layer: 0
   m_Name: StorPlatform_Gress
   m_TagString: Untagged
@@ -1114,6 +1373,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &775826103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 775826099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &882194850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1394,7 @@ GameObject:
   - component: {fileID: 882194851}
   - component: {fileID: 882194852}
   - component: {fileID: 882194853}
+  - component: {fileID: 882194854}
   m_Layer: 0
   m_Name: LitenPlatform_Gress
   m_TagString: Untagged
@@ -1215,6 +1486,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &882194854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882194850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &890569947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1507,7 @@ GameObject:
   - component: {fileID: 890569948}
   - component: {fileID: 890569949}
   - component: {fileID: 890569950}
+  - component: {fileID: 890569951}
   m_Layer: 0
   m_Name: LitenPlatform_Gress (1)
   m_TagString: Untagged
@@ -1316,6 +1599,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &890569951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890569947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &894975506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1620,7 @@ GameObject:
   - component: {fileID: 894975507}
   - component: {fileID: 894975508}
   - component: {fileID: 894975509}
+  - component: {fileID: 894975510}
   m_Layer: 0
   m_Name: LitenPlatform_Gress
   m_TagString: Untagged
@@ -1417,6 +1712,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &894975510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894975506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900337250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1750,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1115024027}
+  - {fileID: 348397956}
+  - {fileID: 647842265}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1466,6 +1774,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 977036418}
+  - component: {fileID: 977036420}
+  - component: {fileID: 977036419}
   m_Layer: 0
   m_Name: GrassFloor (4)
   m_TagString: Untagged
@@ -1489,6 +1799,37 @@ Transform:
   m_Father: {fileID: 1115024027}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &977036419
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977036417}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &977036420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977036417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1115024026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115024027}
   m_Layer: 0
-  m_Name: GrassFloors
+  m_Name: FullGrassFloors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,7 +1876,7 @@ GameObject:
   - component: {fileID: 1181169193}
   - component: {fileID: 1181169196}
   m_Layer: 0
-  m_Name: fishTile_047
+  m_Name: PlacheHolderBeer
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1604,12 +1945,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1181169192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8859034, y: 2.7713099, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.360282, y: 0.7521672, z: -0.11464553}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1199455935}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1181169196
 BoxCollider2D:
@@ -1646,6 +1987,7 @@ GameObject:
   - component: {fileID: 1188384973}
   - component: {fileID: 1188384974}
   - component: {fileID: 1188384975}
+  - component: {fileID: 1188384976}
   m_Layer: 0
   m_Name: LitenPlatform_Gress (1)
   m_TagString: Untagged
@@ -1737,6 +2079,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1188384976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188384972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1199455934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199455935}
+  m_Layer: 0
+  m_Name: PickUps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1199455935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199455934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5256214, y: 2.0191426, z: 0.11464553}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1181169195}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1368654086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,8 +2129,6 @@ GameObject:
   - component: {fileID: 1368654087}
   - component: {fileID: 1368654088}
   - component: {fileID: 1368654089}
-  - component: {fileID: 1368654090}
-  - component: {fileID: 1368654091}
   m_Layer: 0
   m_Name: StorPlatform_Gress
   m_TagString: Untagged
@@ -1840,24 +2220,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64}
   m_EdgeRadius: 0
---- !u!114 &1368654090
-MonoBehaviour:
+--- !u!1 &1410438096
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1368654086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!50 &1368654091
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410438100}
+  - component: {fileID: 1410438099}
+  - component: {fileID: 1410438098}
+  - component: {fileID: 1410438097}
+  - component: {fileID: 1410438101}
+  m_Layer: 0
+  m_Name: fishTile_089
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &1410438097
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1368654086}
+  m_GameObject: {fileID: 1410438096}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -1870,7 +2258,102 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 3
+--- !u!61 &1410438098
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1410438096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
+--- !u!212 &1410438099
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1410438096}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fcfcd72bc50fc2d46820aeb5c19f6642, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.64, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1410438100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1410438096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.501, y: 4.6530514, z: 0}
+  m_LocalScale: {x: 4.625, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410438101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1410438096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1463587157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +2475,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504345107}
+  - component: {fileID: 1504345109}
+  - component: {fileID: 1504345108}
   m_Layer: 0
   m_Name: GrassFloor (6)
   m_TagString: Untagged
@@ -2015,6 +2500,37 @@ Transform:
   m_Father: {fileID: 1115024027}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1504345108
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504345106}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &1504345109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504345106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1605406951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2539,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1605406952}
+  - component: {fileID: 1605406954}
+  - component: {fileID: 1605406953}
   m_Layer: 0
   m_Name: GrassFloor
   m_TagString: Untagged
@@ -2046,6 +2564,37 @@ Transform:
   m_Father: {fileID: 1115024027}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1605406953
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1605406951}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &1605406954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1605406951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1717075553
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2603,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1717075554}
+  - component: {fileID: 1717075556}
+  - component: {fileID: 1717075555}
   m_Layer: 0
   m_Name: GrassFloor (2)
   m_TagString: Untagged
@@ -2077,6 +2628,37 @@ Transform:
   m_Father: {fileID: 1115024027}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1717075555
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717075553}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &1717075556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717075553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1736822134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2669,7 @@ GameObject:
   - component: {fileID: 1736822135}
   - component: {fileID: 1736822136}
   - component: {fileID: 1736822137}
+  - component: {fileID: 1736822138}
   m_Layer: 0
   m_Name: LitenPlatform_Gress (1)
   m_TagString: Untagged
@@ -2178,6 +2761,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1736822138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736822134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1781445885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,6 +2782,7 @@ GameObject:
   - component: {fileID: 1781445886}
   - component: {fileID: 1781445887}
   - component: {fileID: 1781445888}
+  - component: {fileID: 1781445889}
   m_Layer: 0
   m_Name: StorPlatform_Gress
   m_TagString: Untagged
@@ -2279,6 +2874,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1781445889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781445885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1838836901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,6 +2895,7 @@ GameObject:
   - component: {fileID: 1838836902}
   - component: {fileID: 1838836903}
   - component: {fileID: 1838836904}
+  - component: {fileID: 1838836905}
   m_Layer: 0
   m_Name: LitenPlatform_Gress
   m_TagString: Untagged
@@ -2380,6 +2987,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1838836905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1838836901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875559294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +3008,7 @@ GameObject:
   - component: {fileID: 1875559295}
   - component: {fileID: 1875559296}
   - component: {fileID: 1875559297}
+  - component: {fileID: 1875559298}
   m_Layer: 0
   m_Name: LitenPlatform_Gress (1)
   m_TagString: Untagged
@@ -2481,6 +3100,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1875559298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875559294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1981928990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,11 +3206,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1981928990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35180902, y: 0.432, z: 0.0016180985}
+  m_LocalPosition: {x: -1.506191, y: 0.22500001, z: -0.031676307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 486533586}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043999779
 GameObject:
@@ -2592,6 +3222,7 @@ GameObject:
   - component: {fileID: 2043999780}
   - component: {fileID: 2043999781}
   - component: {fileID: 2043999782}
+  - component: {fileID: 2043999783}
   m_Layer: 0
   m_Name: StorPlatform_Gress
   m_TagString: Untagged
@@ -2683,6 +3314,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &2043999783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2043999779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2101758658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,6 +3335,7 @@ GameObject:
   - component: {fileID: 2101758659}
   - component: {fileID: 2101758660}
   - component: {fileID: 2101758661}
+  - component: {fileID: 2101758662}
   m_Layer: 0
   m_Name: LitenPlatform_Gress (1)
   m_TagString: Untagged
@@ -2784,6 +3427,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &2101758662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101758658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b6c80e7b846d47915f12c2e4f77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2120963456
 GameObject:
   m_ObjectHideFlags: 0
