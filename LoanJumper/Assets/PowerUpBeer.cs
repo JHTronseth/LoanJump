@@ -19,6 +19,13 @@ public class PowerUpBeer : MonoBehaviour {
         if (collision.tag == "Player")
         {
             print("Here");
+            Destroy(gameObject);
+        }
+
+        if (collision.tag == "Wave")
+        {
+            print("Here");
+            Destroy(gameObject);
         }
     }
 }

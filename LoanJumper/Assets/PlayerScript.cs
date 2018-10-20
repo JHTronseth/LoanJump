@@ -100,4 +100,12 @@ public class PlayerScript : MonoBehaviour {
         //animator = GetComponent<Animator>();
         //updateBulletText();
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Wave")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
