@@ -9,8 +9,17 @@ public class floorScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+       /* if (flip == )
+        {
+            transform.Rotate(new Vector3(0, 180, 0));
+        } */
 	}
+
+    internal void flip()
+    {
+        print("flippen skjer");
+        transform.Rotate(0, 180, 0);
+    }
 	
 	// Update is called once per frame
 	void Update () {

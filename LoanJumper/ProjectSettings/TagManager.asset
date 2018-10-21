@@ -6,6 +6,17 @@ TagManager:
   tags:
   - PowerUp
   - Wave
+  - EntryFloor
+  - FloorType1
+  - FloorType2
+  - FloorType3
+  - FloorType4
+  - FloorType5
+  - FloorType6
+  - FloorType7
+  - FloorType8
+  - FloorType9
+  - FloorType10
   layers:
   - Default
   - TransparentFX

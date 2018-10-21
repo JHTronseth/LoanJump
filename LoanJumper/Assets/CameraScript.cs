@@ -1,29 +1,39 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections;
-using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CompleteCameraController : MonoBehaviour
+public class CameraScript : MonoBehaviour
 {
-
-    public GameObject player;       //Public variable to store a reference to the player game object
-
-
-    private Vector3 offset;         //Private variable to store the offset distance between the player and camera
-
-    // Use this for initialization
+    public GameObject player;
+    private Vector3 offset;
     void Start()
     {
-        //Calculate and store the offset value by getting the distance between the player's position and camera's position.
-        offset = transform.position - player.transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // LateUpdate is called after Update each frame
-    void LateUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = player.transform.position + offset;
+
+        if (player.transform.position.y > gameObject.transform.position.y)
+        {
+            gameObject.transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z); ;
+        }
+
+        if (player.transform.position.y <= gameObject.transform.position.y - 7)
+        {
+            Destroy(player);
+        }
+        else if (player.transform.position.x <= gameObject.transform.position.x - 7)
+        {
+            Destroy(player);
+        }
+        else if (player.transform.position.x >= gameObject.transform.position.x + 7)
+        {
+            Destroy(player);
+        }
     }
 }
