@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: 89d9303400d8456458e7cf0812846689
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: StudentRun_0
+    21300002: StudentRun_1
+    21300004: StudentRun_2
+    21300006: StudentRun_2
+    21300008: StudentRun_3
+    21300010: StudentRun_4
+    21300012: StudentRun_5
+    21300014: StudentRun_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -137,7 +145,127 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: StudentRun_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 22
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600595a086303d744b10517f8901ed5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StudentRun_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 22
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156396c8b7259c6479e241650ea1a53d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StudentRun_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 22
+        width: 67
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488ba31b3f9e1bb49a97b50b1a4ef672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StudentRun_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 22
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fd7af666f5b3744b41dc8aaa911acb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StudentRun_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 22
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9ac1334079358489c4845045eded84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StudentRun_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 22
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a11611fad99f14d90b63460ccabcda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

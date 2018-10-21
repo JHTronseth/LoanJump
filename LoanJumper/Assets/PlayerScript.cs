@@ -11,6 +11,8 @@ public class PlayerScript : MonoBehaviour {
     [SerializeField] private float maxHSpeed;
     [SerializeField] private float velocityIncrements;
     [SerializeField] private float jumpForce;
+     private Animator animator;
+
     bool hasJumped = true;
     bool isGrounded = false;
     [SerializeField] private LayerMask groundMask;
@@ -18,14 +20,15 @@ public class PlayerScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        animator = GetComponent<Animator>();
        Console.WriteLine("Hello World!");
     }
 	
 	// Update is called once per frame
 	void Update () {
         //animator.SetBool("isGrounded", isGrounded);
-        //animator.SetFloat("velocityX", rb2d.velocity.x);
-
+        animator.SetFloat("velocityX", rb2d.velocity.x);
+        animator.SetFloat("velocityY", rb2d.velocity.y);
         if (rb2d.velocity.x < -0.01)
         {
             GetComponent<SpriteRenderer>().flipX = true;
